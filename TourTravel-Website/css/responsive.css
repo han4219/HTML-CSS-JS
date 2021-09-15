@@ -13,19 +13,28 @@
     padding: 2rem;
   }
 
-  /* start responsive for section book  */
-  .book-container {
-    display: flex;
-    flex-direction: column;
+  /* start responsive for packages  */
+  .package-container .card {
+    width: 49.33%;
+    height: 59rem;
   }
 
-  .book-container .image {
-    flex-basis: 100%;
+  .package-container .card h3 {
+    padding: 1rem 0;
   }
-  .book-container .form {
-    flex-basis: 100%;
+
+  .package-container .card .stars {
+    padding: 1rem 0;
   }
-  /* end responsive for section book  */
+
+  .package-container .card .price {
+    margin-bottom: 4rem;
+  }
+
+  #packages a.btn {
+    padding: 1rem;
+  }
+  /* end responsive for packages  */
 }
 
 @media (max-width: 768px) {
@@ -63,6 +72,34 @@
   }
 
   /* end responsive for header */
+
+  /* start responsive for section book  */
+  .book-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .book-container .image {
+    flex-basis: 100%;
+  }
+  .book-container .form {
+    flex-basis: 100%;
+  }
+  /* end responsive for section book  */
+
+  /* start responsive for packages  */
+  .package-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .package-container .card {
+    width: 100%;
+  }
+  /* end responsive for packages  */
 }
 
 @media (max-width: 576px) {
