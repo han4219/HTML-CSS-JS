@@ -30,6 +30,43 @@ section {
   padding: 2rem 10%;
 }
 
+.btn {
+  width: 100%;
+  display: block;
+  font-size: 2rem;
+  border: 0.2rem solid var(--orange);
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 0.8rem 0;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: var(--orange);
+  background-color: rgba(255, 165, 0, 0.2);
+  background-clip: border-box;
+}
+
+.title {
+  text-align: center;
+  padding: 3rem;
+}
+
+.title span:not(.title-space) {
+  font-size: 4rem;
+  padding: 0 1rem;
+  color: var(--orange);
+  background-color: rgba(255, 165, 0, 0.2);
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.title .title-space {
+  display: inline-block;
+  width: 2rem;
+}
 /* start style for header */
 
 header {
@@ -159,23 +196,6 @@ header .login-form--container form .box {
   margin: 1rem 0;
 }
 /* header .login-form--container form */
-.btn {
-  width: 100%;
-  font-size: 2rem;
-  border: 0.2rem solid var(--orange);
-  color: var(--white);
-  background-color: var(--orange);
-  padding: 0.8rem 0;
-  cursor: pointer;
-  margin-bottom: 1rem;
-  transition: 0.3s ease-in-out;
-}
-/* header .login-form--container form */
-.btn:hover {
-  color: var(--orange);
-  background-color: rgba(255, 165, 0, 0.2);
-  background-clip: border-box;
-}
 
 header .login-form--container form label {
   font-size: 1.5rem;
@@ -242,12 +262,85 @@ header #menu-bar {
 
 .home .content p {
   color: var(--white);
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-#home .content.btn {
+a.btn {
   width: 20rem;
+  margin: auto;
 }
 
+.home .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.home .controls {
+  position: absolute;
+  top: 80%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5rem;
+}
+
+.home .controls .vid-btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--white);
+  padding: 1rem 1rem;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.home .controls .vid-btn.active {
+  background: var(--orange);
+}
 /* end style for section home */
+
+/* start style for section book  */
+
+.book-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.book-container .image {
+  flex-basis: 50%;
+}
+
+.book-container .form {
+  padding: 2rem;
+  flex-basis: 50%;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.3rem 1rem rgb(0 0 0 / 20%);
+}
+
+.book-container .form form label {
+  font-size: 2rem;
+  font-weight: 800;
+  opacity: 0.7;
+}
+
+.book-container .form form input {
+  font-size: 1.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  text-transform: none;
+}
+
+.book-container .form form input:last-child {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+/* end style for section book  */

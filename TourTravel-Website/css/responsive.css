@@ -8,6 +8,24 @@
   header {
     padding: 2rem;
   }
+
+  section {
+    padding: 2rem;
+  }
+
+  /* start responsive for section book  */
+  .book-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .book-container .image {
+    flex-basis: 100%;
+  }
+  .book-container .form {
+    flex-basis: 100%;
+  }
+  /* end responsive for section book  */
 }
 
 @media (max-width: 768px) {
@@ -50,5 +68,9 @@
 @media (max-width: 576px) {
   html {
     font-size: 50%;
+  }
+
+  header .login-form--container form {
+    width: 90%;
   }
 }

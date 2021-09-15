@@ -6,6 +6,9 @@ let formClose = document.getElementById("form-close");
 let formLogin = document.querySelector(".login-form--container");
 let menuBarBtn = document.getElementById("menu-bar");
 let navbar = document.querySelector(".navbar");
+let videoBtns = document.querySelectorAll(".vid-btn");
+let videoSrc = document.querySelector("#video-slider");
+
 window.onscroll = () => {
   searchBtn.classList.remove("fa-times");
   searchBar.classList.remove("active");
@@ -34,4 +37,16 @@ formClose.addEventListener("click", () => {
 menuBarBtn.addEventListener("click", () => {
   menuBarBtn.classList.toggle("fa-times");
   navbar.classList.toggle("active");
+});
+
+// click control video
+videoBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    videoBtns.forEach((_btn) => {
+      _btn.classList.remove("active");
+    });
+    btn.classList.add("active");
+    let src = btn.getAttribute("data-src");
+    videoSrc.src = src;
+  });
 });
