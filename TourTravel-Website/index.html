@@ -18,6 +18,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,8 +32,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
+    <!-- Start header section -->
+    <header>
+      <i class="fas fa-bars" id="menu-bar"></i>
+
+      <a href="#" class="logo">Travel</a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar--container">
+        <input type="text" id="search-bar" placeholder="search here..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+
+      <div class="login-form--container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+          <h3>Login</h3>
+          <input type="email" class="box" placeholder="Enter your email..." />
+          <input
+            type="password"
+            class="box"
+            placeholder="Enter your password..."
+          />
+          <input type="submit" value="login now" class="btn" />
+          <input type="checkbox" id="remember" />
+          <label for="remember">remember me</label>
+          <p>Forget password? <a href="#">Click here</a></p>
+          <p>don't have an account? <a href="#">register now</a></p>
+        </form>
+      </div>
+    </header>
+    <!-- End header section -->
+
+    <!-- start home section -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>ADVENTURE IS WORTHWHILE</h3>
+        <p>Dicover New Places With Us, Adventure Awaits</p>
+        <a href="#" class="btn">discover more</a>
+      </div>
+    </section>
+    <!-- end home section -->
     <script src="./js/app.js"></script>
   </body>
 </html>
