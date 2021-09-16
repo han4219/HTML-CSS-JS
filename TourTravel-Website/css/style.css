@@ -502,3 +502,113 @@ a.btn {
   left: 0;
 }
 /* end style for gallery  */
+
+/* start style for swipper */
+.swiper {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#review .swiper-slide {
+  width: 32%;
+  text-align: center;
+  box-shadow: 0rem 0.3rem 1rem rgb(0 0 0 / 20%);
+  margin: 1rem;
+  padding: 2rem;
+}
+#review .swiper-slide img {
+  border-radius: 50%;
+  width: 15rem;
+}
+
+#review .swiper-slide h3 {
+  font-size: 2.5rem;
+}
+
+#review .swiper-slide p {
+  font-size: 1.5rem;
+}
+
+#review .swiper-slide .stars i {
+  color: var(--orange);
+  font-size: 2rem;
+}
+/* end style for swipper */
+
+/* start style for contact  */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-container .item {
+  flex: 1 1 49%;
+}
+
+.contact-container .form {
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: 0rem 0.3rem 1rem rgb(0 0 0 / 20%);
+}
+
+.contact-container .form .input-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-container .form .input-box input {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  flex: 1 1 50%;
+  margin: 1.5rem 0;
+}
+
+.contact-container .form textarea {
+  resize: none;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contact-container .form input[type="submit"] {
+  margin-top: 2rem;
+}
+/* end style for contact  */
+
+/* start style for slider  */
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* end style for slider  */

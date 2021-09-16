@@ -44,6 +44,16 @@
   .gallery-container .box {
     flex: 1 1 45%;
   }
+
+  /* responsive for slide  */
+  .review .swiper-slide img {
+    width: 10rem;
+  }
+
+  .review .swiper-slide .stars i {
+    font-size: 1rem;
+  }
+  /* responsive for slide  */
 }
 
 @media (max-width: 768px) {
