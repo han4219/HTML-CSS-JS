@@ -67,6 +67,14 @@ section {
   display: inline-block;
   width: 2rem;
 }
+
+.d-flex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 /* start style for header */
 
 header {
@@ -346,12 +354,6 @@ a.btn {
 /* end style for section book  */
 
 /* start style for section packages  */
-.package-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
 
 .package-container .card {
   width: 32%;
@@ -425,3 +427,78 @@ a.btn {
   margin: 1rem 0;
 }
 /* end style for section packages  */
+
+/* start style for service  */
+
+.service-container .box {
+  width: 32%;
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.service-container .box:hover {
+  box-shadow: 0rem 0.3rem 1rem rgb(0 0 0 / 20%);
+}
+
+.service-container .box i {
+  font-size: 5rem;
+  color: var(--orange);
+}
+
+.service-container .box h2 {
+  font-size: 2.5rem;
+}
+
+.service-container .box p {
+  font-size: 1.5rem;
+}
+/* end style for service  */
+
+/* start style for gallery  */
+.gallery-container .box {
+  height: 25rem;
+  flex: 1 1 32%;
+  border: 1rem solid var(--white);
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.3rem 1rem rgb(0 0 0 / 20%);
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-container .box .content {
+  position: absolute;
+  top: -120%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 4rem 2rem 2rem 2rem;
+}
+
+.gallery-container .box .content h3 {
+  color: var(--orange);
+  font-size: 2.5rem;
+  margin: 1rem 0 0 0;
+}
+.gallery-container .box .content p {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+#gallery a.btn {
+  font-size: 1.5rem;
+}
+
+.gallery-container .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-container .box:hover .content {
+  top: 0;
+  left: 0;
+}
+/* end style for gallery  */

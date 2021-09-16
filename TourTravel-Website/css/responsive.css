@@ -35,6 +35,15 @@
     padding: 1rem;
   }
   /* end responsive for packages  */
+
+  /* start responsive for service  */
+  .service-container .box {
+    width: 49.33%;
+  }
+  /* end responsive for service  */
+  .gallery-container .box {
+    flex: 1 1 45%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -100,6 +109,19 @@
     width: 100%;
   }
   /* end responsive for packages  */
+
+  /* start responsive for service  */
+  .service-container {
+    flex-direction: column;
+  }
+
+  .service-container .box {
+    width: 100%;
+  }
+  /* end responsive for service  */
+  .gallery-container .box {
+    flex: 1 1 100%;
+  }
 }
 
 @media (max-width: 576px) {
