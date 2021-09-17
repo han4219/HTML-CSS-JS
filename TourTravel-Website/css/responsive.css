@@ -105,7 +105,13 @@
     flex-basis: 100%;
   }
   /* end responsive for section book  */
+  .contact-container {
+    flex-direction: column;
+  }
 
+  .contact-container .item {
+    flex-basis: 100%;
+  }
   /* start responsive for packages  */
   .package-container {
     width: 100%;
