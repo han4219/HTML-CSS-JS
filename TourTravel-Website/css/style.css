@@ -503,23 +503,28 @@ a.btn {
 }
 /* end style for gallery  */
 
-/* start style for swipper */
-.swiper {
-  width: 100%;
-  height: 100%;
+/* start style for swipper-review */
+section #review {
+  width: 100% !important;
+  padding: 0;
+  margin: 0;
+}
+#review .swiper {
   z-index: 0;
+  padding: 0rem 1rem;
 }
 
 #review .swiper-slide {
-  width: 32%;
   text-align: center;
+  margin: 2rem 0rem;
+  padding: 2rem 1rem;
   box-shadow: 0rem 0.3rem 1rem rgb(0 0 0 / 20%);
-  margin: 1rem;
-  padding: 2rem;
 }
+
 #review .swiper-slide img {
   border-radius: 50%;
   width: 15rem;
+  margin: auto;
 }
 
 #review .swiper-slide h3 {
@@ -534,7 +539,7 @@ a.btn {
   color: var(--orange);
   font-size: 2rem;
 }
-/* end style for swipper */
+/* end style for swipper-review */
 
 /* start style for contact  */
 .contact-container {
@@ -579,36 +584,16 @@ a.btn {
 /* end style for contact  */
 
 /* start style for slider  */
-.mySwiper {
-  width: 100%;
-  height: 100%;
-}
 
-.mySwiper .swiper-slide img {
+.swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 185px;
+  height: auto;
   object-fit: cover;
 }
 
-.mySwiper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+.swiper-slide .swiper-slide-active {
+  width: 185px !important;
 }
 
 /* end style for slider  */
