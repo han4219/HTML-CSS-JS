@@ -592,14 +592,64 @@ section #review {
 .swiper-wrapper {
   box-sizing: content-box;
 }
-.swiper-slide img {
-  display: block;
-  width: 185px;
-  height: auto;
-  object-fit: cover;
-}
 
 .brand {
   overflow: hidden;
 }
 /* end style for slider  */
+
+/* start style for footer  */
+.footer {
+  background-color: var(--navColor);
+  color: var(--white);
+}
+
+.footer-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-container .col {
+  flex: 1;
+}
+
+.footer-container .col h3 {
+  font-size: 2.5rem;
+}
+
+.footer-container .col p {
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.footer-container .col a {
+  color: var(--white);
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.footer-container .col a:hover {
+  text-decoration: underline;
+  color: var(--orange);
+  transition: 0.3s ease-in-out;
+}
+
+.footer .author {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1rem 0rem;
+}
+
+.footer .author span {
+  color: var(--orange);
+}
+
+.footer hr {
+  height: 1px;
+  background-color: #ccc;
+}
+/* end style for footer  */

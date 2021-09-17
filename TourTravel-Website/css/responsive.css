@@ -91,7 +91,9 @@
   }
 
   /* end responsive for header */
-
+  .contact-container .form input[type="submit"] {
+    padding: 2rem 0;
+  }
   /* start responsive for section book  */
   .book-container {
     display: flex;
@@ -138,6 +140,11 @@
   .gallery-container .box {
     flex: 1 1 100%;
   }
+
+  /* footer */
+  .footer-container .col {
+    flex-basis: 50%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -147,5 +154,11 @@
 
   header .login-form--container form {
     width: 90%;
+  }
+
+  /* footer */
+  .footer-container .col {
+    flex-basis: 100%;
+    /* text-align: center; */
   }
 }

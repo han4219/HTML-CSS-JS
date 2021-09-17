@@ -60,7 +60,7 @@ var swiper = new Swiper(".review-slider", {
     disableOnInteraction: false,
   },
   breakpoints: {
-    640: {
+    576: {
       slidesPerView: 1,
     },
     768: {
@@ -80,7 +80,7 @@ var swiper = new Swiper(".brand-slider", {
     disableOnInteraction: false,
   },
   breakpoints: {
-    576: {
+    300: {
       slidesPerView: 2,
     },
     768: {
