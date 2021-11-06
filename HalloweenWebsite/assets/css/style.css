@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+  --main-color: #ef7819;
+  --black: #141215;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  transition: width none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  color: var(--black);
+}
+
+html::-webkit-scrollbar-thumb {
+  color: var(--main-color);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--black);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 1000;
+  padding: 3rem 9%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222222;
+}
+
+.header .logo {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.header .logo i {
+  padding-right: 0.5rem;
+  font-size: 3rem;
+  color: var(--main-color);
+  animation: floating 2s linear infinite;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0.7rem);
+  }
+  50% {
+    transform: translateY(-0.7rem);
+  }
+}
+
+.header .navbar a {
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 0 1rem;
+}
+
+.header .navbar a.active,
+.header .navbar a:hover {
+  color: var(--main-color);
+}
+
+.header .icons #menu-btn {
+  display: none;
+}
+
+.header .icons #menu-btn,
+#search-btn,
+a {
+  color: #fff;
+  font-size: 2.5rem;
+  padding-left: 1.5rem;
+  cursor: pointer;
+}
+
+.header .icons a:hover {
+  color: var(--main-color);
+}
+
+.header .icons #menu-btn:hover {
+  color: var(--main-color);
+}
+
+.header .icons #search-btn:hover {
+  color: var(--main-color);
+}
+
+.header .form-search {
+  position: absolute;
+  top: 115%;
+  right: 2rem;
+  background: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .form-search input {
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.header .form-search label {
+  padding: 1.5rem;
+  color: var(--black);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.header .form-search label:hover {
+  color: var(--main-color);
+}
